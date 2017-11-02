@@ -1,0 +1,368 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+}
+body{
+	font-size: 12px;
+	font-family: "微软雅黑";
+	-background: #505050;
+}
+ul li{
+	list-style: none;
+}
+.clear:after{
+	content: '.';
+	clear: both;
+	display: block;
+	height: 0;
+	overflow: hidden;
+	visibility: hidden;
+	
+}
+.dxuan{
+	width: 100%;
+	height: 100%;
+}
+.dbig{
+	width: 100%;
+	height: 100%;
+}
+/*head头部 标题*/
+.head{
+	width: 100%;
+	height: 10%;
+	background: #000;
+	position: relative;
+}
+.head h3{
+	width: 100%;
+	color: #fff;
+	text-align: center;
+	padding: 1% 0;
+	font-size: 24px;
+}
+.head .head_lo{
+	width: 160px;
+	position: absolute;
+	left: 2%;
+	top: 20%;
+	text-align: center;
+}
+.head .head_lo .bom{
+	width: 160px;
+	height: 40px;
+	color: #fff;
+	position: relative;
+	z-index: 20;
+	transform-style: preserve-3d;
+	perspective: 800px;
+}
+.head .head_lo .bom .btn{
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 50;
+	width: 160px;
+	height: 40px;
+	background: #000;
+	line-height: 36px;
+	font-size: 16px;
+	padding: 1% 0;
+	border-radius: 15px;
+	border: 1px solid #fff;
+	box-sizing: border-box;
+	box-shadow: 0 0 5px 2px rgba(255,255,255,0.6);
+}
+.head .head_lo .bom div{
+	width: 100%;
+	height: auto;
+	position: absolute;
+	left: 0;
+	top: 38px;
+	border-radius: 15px;
+	background: #000;
+	transform-style: preserve-3d;
+	transform: rotateX(-90deg);
+	transform-origin: top;
+	border: 1px solid #fff;
+	box-sizing: border-box;
+}
+/*把最后一个标题选择隐藏*/
+.head .head_lo .bom div div div div{
+	display: none;
+}
+.head .head_lo .bom>div:nth-child(1){
+	top: 38px;
+}
+.head .head_lo .bom span{
+	display: block;
+	width: 100%;
+	height: 38px;
+	line-height: 38px;
+	font-size: 14px;
+	border-radius: 15px;
+	transition: 1s;
+	box-shadow: inset 0 0 0 20px rgba(0,0,0,1);
+}
+
+.head .head_lo .bom .show{
+	-webkit-animation: show 2s;
+	-webkit-transform: rotateX(0deg);
+}
+/*展开时的运动角度*/
+@-webkit-keyframes show {
+    0%{
+       -webkit-transform: rotateX(-90deg);
+    }
+    30%{
+        -webkit-transform: rotateX(45deg);
+    }
+    60%{
+        -webkit-transform: rotateX(-30deg);
+    }
+    100%{
+        -webkit-transform: rotateX(0deg);
+    }
+}
+.head .head_lo .bom .hidden{
+	animation: hidden 2s;
+	transform: rotateX(-120deg);
+}
+/*收回的运动角度*/
+@-webkit-keyframes hidden{
+	0%{
+        -webkit-transform: rotateX(0deg);
+    }
+    30%{
+        -webkit-transform: rotateX(-30deg);
+    }
+    60%{
+        -webkit-transform: rotateX(-60deg);
+    }
+    100%{
+        -webkit-transform: rotateX(-120deg);
+    }
+}
+.head .head_lo .bom .show>span{
+	box-shadow: inset 0 0 0 20px rgba(0,0,0,0);
+}
+/*内容部分*/
+.phto{
+	width: 100%;
+	height: 90%;
+	background: #000;
+	opacity: 0.8;
+}
+/*旋转的样式wrap*/
+.wrap{
+	width: 100%;
+	height: 88%;
+	display: none;
+	padding-top: 5%;
+}
+.wrap .box{
+	width: 800px;
+	height: 350px;
+	margin: 0 auto;
+	margin-bottom: 60px;
+}
+.wrap .box ul{
+	width: 50px;
+	height: 350px;
+	transform-style: preserve-3d;
+	position: relative;
+	float: left;
+	transition: all 0.9s ease;
+}
+.wrap .box ul li{
+	width: 50px;
+	height: 350px;
+	position: absolute;
+	
+}
+.wrap .box ul li:nth-of-type(1){
+	width: 100%;
+	transform: translateZ(175px);
+}
+.wrap .box ul li:nth-of-type(2){
+	width: 100%;
+	transform: rotateX(-90deg) translateZ(-175px) 	rotate(180deg);
+	
+}
+.wrap .box ul li:nth-of-type(3){
+	
+	width: 100%;
+	transform: translateZ(-350px) translateZ(175px) rotate(180deg);
+}
+.wrap ul li:nth-of-type(4){
+	width: 100%;
+	transform: rotateX(90deg) translateZ(-175px) rotate(180deg);
+}
+.wrap .box ul li:nth-of-type(5){
+	width: 350px;
+	transform-origin: left;
+	transform: rotateY(90deg) translateX(-175px)
+
+}
+.wrap .box ul li:nth-of-type(6){
+	width: 350px;
+    transform-origin: right;
+    transform: rotateY(-90deg) translateX(175px);
+    position: absolute;
+    right: 0
+
+}
+.wrap .inp{
+	width: 800px;
+	height: 50px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 50px;
+	text-align: center;
+	background: url(../images/17.jpg) no-repeat;
+	margin: 0 auto;
+}
+
+/*平铺2d和3d*/
+section.con{
+	height: 100%;
+	background: #000;
+	display: block;
+}
+.con .list{
+	height: 100%;
+	position: relative;
+	margin: 0 auto;
+	top: 0;
+	overflow: hidden;
+}
+.con .list li{
+	width: 160px;
+	height: 100px;
+	position: absolute;
+	box-shadow: 1px 1px 3px 0px #000;
+	transform: rotate(30deg);
+	left: 100px;
+	top: 50px;
+	transition: transform 0.2s;
+	transform-origin: center; 
+}
+.con .list li span{
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+}
+.con .list li span a{
+	display: block;
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	position: absolute;
+	z-index: 0;
+	left: 0;
+	top: 0;
+	transition: opacity 1s;
+	opacity: 0;
+}
+.con .list li span img{
+	width: 150px;
+	height: 90px;
+	border: 5px solid #fff;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+}
+.con .list li span b{
+	display: block;
+	width: 160px;
+	height: 100px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+
+.con strong{
+	display: none;
+	width: 50px;
+	height: 50px;
+	background: #ccc;
+	position: absolute;
+	line-height: 45px;
+	text-align: center;
+	font-size: 30px;
+	border-radius: 25px;
+}
+.con .next,.con .next3d{
+	right: 30px;
+	top: 50%;
+}
+.con .prev,.con .prev3d{
+	left: 30px;
+	top: 50%;
+}
+.con .next3d{
+	display: none;
+}
+.con .prev3d{
+	display: none;
+}
+/*3d效果的CSS样式*/
+.con .list li div{
+	background-size: 100% 100%;
+	box-shadow: 0px 0px 5px 0px #000;
+	position: absolute;
+}
+.con .list li div:nth-of-type(1){
+	width: 160px;
+	height: 100px;
+	left: 0;
+	top: 0;
+}
+.con .list li div:nth-of-type(2){
+	width: 160px;
+	height: 100px;
+	top: -100px;
+	left: 0;
+	transform-origin: bottom;
+	transform: rotateX(90deg);
+}
+.con .list li div:nth-of-type(3){
+	width: 100px;
+	height: 100px;
+	top: 0;
+	left: -100px;
+	transform-origin: right;
+	transform: rotateY(-90deg);
+}
+.con .list li div:nth-of-type(4){
+	width: 100px;
+	height: 100px;
+	left: 160px;
+	top: 0;
+	transform-origin: left;
+	transform: rotateY(90deg);
+}
+.con .list li div:nth-of-type(5){
+	width: 160px;
+	height: 100px;
+	left: 0px;
+	top: 100px;
+	transform-origin: top;
+	transform: rotateX(-90deg);
+}
+.con .list li div:nth-of-type(6){
+	width: 160px;
+	height: 100px;
+	left: 0px;
+	top: 0;
+	transform: translateZ(-100px);
+}

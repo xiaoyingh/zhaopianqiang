@@ -1,0 +1,23 @@
+
+1：加载页面  借鉴网站   http://www.yyyweb.com/demo/page-preloading/index.html
+
+
+
+2: 首页	借鉴网站：https://www.lab21.gr/
+	     	  https://www.lahautesociete.com（只借鉴首页）
+	          https://www.lahautesociete.com/quoi-de-neuf
+	
+	如果可以会在首页添加个简单的音乐播放器
+
+	以上网站只会参考其中的一些效果，但不会按照他们的网站做。
+
+
+3：单机小游戏（别踩白块儿）  如果允许可以适应移动端
+
+  
+4: 3D照片墙 功能：（1）图片的旋转＋拖拽    http://www.yyyweb.com/ctools/demo.php?t=http%3A%2F%2Fdemo.tutorialzine.com%2F2009%2F11%2Fhovering-gallery-css3-jquery%2Fdemo.php&h=1000&c=&n=gallery
+		  （2）图片的滚动（类型与无缝滚动），并且点击的时候显示大图  http://www.yyyweb.com/demo/parallax-slider/
+		  （3）参考官网的画廊幻灯片以及时空唱片机
+		  （4）图片的滑块效果（考虑进度）  http://www.yyyweb.com/demo/slice-box/index4.html
+
+5：
